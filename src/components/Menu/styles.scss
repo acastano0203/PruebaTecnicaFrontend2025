@@ -1,0 +1,35 @@
+@use "../../components/nav/styles.scss" as nav;
+
+.menu-container {
+    @include nav.respond-to(small) {
+  width: 100%;
+  margin-top: 240px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, auto);
+  z-index: 20;
+  position: absolute;
+  left: 0;
+  right: 0;
+ 
+  padding: 0px 0px 0px 0px;
+ 
+}
+
+@include nav.respond-to(medium) {
+  width: 100%;
+  margin-top: 240px;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(1, auto);
+  z-index: 20;
+  position: absolute;
+  left: 0;
+  right: 0;
+}
+
+@include nav.respond-to(large) {
+  display: none;
+}
+
+}
