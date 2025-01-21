@@ -2,16 +2,17 @@
 
 .menu-container {
     @include layout.respond-to(small) {
-  width: 100%;
-  margin-top: 240px;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(2, auto);
-  z-index: 20;
-  position: absolute;
-  left: 0;
-  right: 0;
-  padding: 0px 0px 0px 0px;
+      width: 100%;
+      margin-top: 240px;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: repeat(2, auto);
+      z-index: 20;
+      position: absolute;
+      top:0;
+      justify-content: center;
+    
+
 }
 
 @include layout.respond-to(medium) {
@@ -24,6 +25,7 @@
   position: absolute;
   left: 0;
   right: 0;
+  top: 0;
 }
 
 @include layout.respond-to(large) {

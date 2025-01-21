@@ -8,6 +8,7 @@ import apiClient from "../../Api";
 import "./styles.scss";
 import RecipesDetail from "../../components/RecipesDetail";
 import Banner from "../../components/Banner";
+import Footer from "../../components/Footer";
 
 interface Recipe {
   idMeal: number;
@@ -28,23 +29,22 @@ const getRecipes = async (): Promise<RecipeResponse> => {
 };
 
 const Home: FC = () => {
-  const { data, isLoading, isError } = useQuery<RecipeResponse>({
+  const { data } = useQuery<RecipeResponse>({
     queryKey: ["recipes"],
     queryFn: getRecipes,
   });
 
-  if (isLoading) return <div>Cargando...</div>;
-  if (isError) return <div>Error al cargar las recetas</div>;
-
   return (
     <Layout>
       <Hero />
+      <Menu />
       <div className="card-container">
         <Banner />
         {data?.meals?.map((recipe: Recipe, index) => (
           <Card key={index} recipe={recipe} />
         ))}
       </div>
+      <Footer />
       <RecipesDetail />
     </Layout>
   );

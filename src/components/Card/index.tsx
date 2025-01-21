@@ -4,7 +4,9 @@ import { useContext, useState, useEffect } from "react";
 import { Context } from "../../context";
 import star from "../../assets/star.png";
 import heart from "../../assets/heart.png";
-import portionIcon from "../../assets/port-icon.svg";
+import portion from "../../assets/icons/plate.png";
+import time from "../../assets/icons/clock.png";
+import difficulty from "../../assets/icons/chef.png";
 
 interface Recipe {
   idMeal: number;
@@ -51,20 +53,18 @@ export const Card: FC<CardProps> = ({ recipe }) => {
         </div>
         <div className="card__hover">
           <div className="card__item">
-            <span className="card__icono">
-              <img src={portionIcon} alt="portion" />
-            </span>
+            <img src={portion} alt="portion" className="card__icono" />
             <span className="card__label">Tamaño de porcion</span>
             <span className="card__valor">4 raciones</span>
           </div>
           <div className="card__item">
-            <span className="card__icono">⏰</span>
+            <img className="card__icono" src={time} alt="time" />
             <span className="card__label">Tiempo de preparación</span>
             <span className="card__valor">10 minutos</span>
           </div>
 
           <div className="card__item">
-            <span className="card__icono">🔥</span>
+            <img className="card__icono" src={difficulty} alt="difficulty" />
             <span className="card__label">Dificultad</span>
             <span className="card__valor">fácil</span>
           </div>

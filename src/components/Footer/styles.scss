@@ -1,0 +1,166 @@
+@use "../Layout/styles.scss" as layout;
+
+@include layout.respond-to(small) {
+  .footer-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100px;
+
+    position: fixed;
+   
+    bottom: 0;
+    left: 0;
+   
+  }
+
+  .footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100vw;
+    height: 70px;
+    background: linear-gradient(to right, #C2E3F3, #6AA3C1);
+    bottom: 0;
+    left: 0;
+    z-index: 100;
+  
+
+    &__left {
+      
+        height: 70px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+ 
+    }
+
+    &__right {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    &__text {
+      font-family: "Monster Clubhouse", cursive;
+      color: #425966;
+      font-size: 23px;
+    }
+
+    &__image {
+      max-width: 229px;
+      height: 106px;
+      transform: translateY(-25px);
+    }
+  }
+}
+
+@include layout.respond-to(medium) {
+    .footer-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100vw;
+        height: 100px;
+    
+        position: fixed;
+       
+        bottom: 0;
+        left: 0;
+       
+      }
+    
+      .footer {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        width: 100vw;
+        height: 70px;
+        background: linear-gradient(to right, #C2E3F3, #6AA3C1);
+        bottom: 0;
+        left: 0;
+        z-index: 100;
+      
+    
+        &__left {
+          
+            height: 70px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+     
+        }
+    
+        &__right {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+    
+        &__text {
+          font-family: "Monster Clubhouse", cursive;
+          color: #425966;
+          font-size: 23px;
+        }
+    
+        &__image {
+          max-width: 229px;
+          height: 106px;
+          transform: translateY(-25px);
+        }
+      }
+}
+
+@include layout.respond-to(large) {
+    .footer-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100vw;
+        height: 248px;
+    
+        position: fixed;
+       
+        bottom: 0;
+        left: 0;
+       
+      }
+    
+      .footer {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        width: 100vw;
+        height: 167px;
+        background: linear-gradient(to right, #C2E3F3, #6AA3C1);
+        bottom: 0;
+        left: 0;
+        z-index: 100;
+      
+    
+        &__left {
+          
+          height: 167px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+     
+        }
+    
+        &__right {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+    
+        &__text {
+          font-family: "Monster Clubhouse", cursive;
+          color: #425966;
+          font-size: 56px;
+        }
+    
+        &__image {
+          max-width: 536px;
+          height: 248px;
+          transform: translateY(-60px);
+        }
+      }
+}

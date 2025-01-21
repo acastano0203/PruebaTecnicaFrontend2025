@@ -121,20 +121,46 @@
   color: #425966;
   opacity: 1;
   margin: 19px;
-  @include layout.respond-to(small) {
-    .nav {
-      display: none;
-    }
-  }
-  @include layout.respond-to(medium) {
-    .nav {
-      display: none;
-    }
-  }
+
 }
 
 
+
 }
+
+@include layout.respond-to(small) {
+  .nav {
+    display: none;
+  }
+  .navlarge {
+    display: none;
+  }
+  .nav__home__span {
+    display: none;
+  }
+
+
+
+}
+@include layout.respond-to(medium) {
+  .nav {
+    display: none;
+  }
+  .navlarge {
+    display: none;
+  }
+
+  .navlarge {
+    display: none;
+  }
+
+  .nav__home__span {
+    display: none;
+  }
+
+
+}
+
 
 .nav__recipe__span {
   font-family: 'Monster Clubhouse', sans-serif;

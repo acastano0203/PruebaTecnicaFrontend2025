@@ -9,7 +9,7 @@ interface MenuCardProps {
 const MenuCard: FC<MenuCardProps> = ({ icono, titulo }) => {
   return (
     <div className="menuCard">
-      <img src={icono} alt={titulo} />
+      <img className="menuCard__icono" src={icono} alt={icono} />
       <p>{titulo}</p>
     </div>
   );
