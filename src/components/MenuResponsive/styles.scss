@@ -1,7 +1,7 @@
-@use "../../components/nav/styles.scss" as nav;
+@use "../Layout/styles.scss" as layout;
 
 .menu-container {
-    @include nav.respond-to(small) {
+    @include layout.respond-to(small) {
   width: 100%;
   margin-top: 240px;
   display: grid;
@@ -11,12 +11,10 @@
   position: absolute;
   left: 0;
   right: 0;
- 
   padding: 0px 0px 0px 0px;
- 
 }
 
-@include nav.respond-to(medium) {
+@include layout.respond-to(medium) {
   width: 100%;
   margin-top: 240px;
   display: grid;
@@ -28,7 +26,7 @@
   right: 0;
 }
 
-@include nav.respond-to(large) {
+@include layout.respond-to(large) {
   display: none;
 }
 

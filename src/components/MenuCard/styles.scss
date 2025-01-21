@@ -1,4 +1,4 @@
-@use "../../components/nav/styles.scss" as nav;
+@use "../Layout/styles.scss" as layout;
 .menuCard {
 
     background: transparent linear-gradient(180deg, #E9F1FA 0%, #FFFFFF 100%) 0% 0% no-repeat padding-box;
@@ -12,7 +12,7 @@
     justify-content: center;
     padding: 5px;
     margin: 5px 5px 5px 5px;
-    @include nav.respond-to(large) {
+    @include layout.respond-to(large) {
         display: none;
         }
    

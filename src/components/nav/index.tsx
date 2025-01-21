@@ -7,26 +7,34 @@ import "./styles.scss";
 const Nav: FC = () => {
   return (
     <div>
+      {/* menu responsive */}
       <div className="nav-container">
-        <nav className="nav">
+        <nav>
           <ul>
-            <li>
-              <img src={Home} alt="Logo" />
+            <li className="ilLogo">
+              <p>
+                <span className="nav__recipe__span">Recipe</span>
+                <span className="nav__app__span">App</span>
+              </p>
             </li>
-            <li>
+            <li className="ilHome">
               <img src={Home} alt="home" />
             </li>
           </ul>
         </nav>
       </div>
-      <div>
-        <nav className="navlarge">
-          <figure>
-            <img src={Home} alt="home" />
-          </figure>
+      {/* menu desktop */}
+      <div className="navlarge">
+        <p className="ilLogo">
+          <span className="nav__recipe__span">Recipe</span>
+          <span className="nav__app__span">App</span>
+        </p>
+        <nav className="navlarge__nav">
           <ul>
             <li>
-              <p className="texto">Home</p>
+              <p className="texto">
+                <span className="nav__home__span">Home</span>
+              </p>
             </li>
             <li>
               <p className="texto">Vegetarianos</p>

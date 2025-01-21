@@ -2,14 +2,15 @@ import { FC } from "react";
 
 import "./styles.scss";
 
-interface HeroProps {
-  title: string;
-}
-
-const Hero: FC<HeroProps> = ({ title }) => {
+const Hero: FC = () => {
   return (
     <div className="hero">
-      <h1 className="">{title}</h1>
+      <h1 className="hero__recipes">
+        <span>Recetas</span>
+      </h1>
+      <h1 className="hero__people">
+        <span>para todos</span>
+      </h1>
     </div>
   );
 };

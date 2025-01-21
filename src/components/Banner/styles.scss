@@ -1,0 +1,32 @@
+@use "../Layout/styles.scss" as layout;
+
+
+.banner {
+  background-color:white;
+  background-repeat: no-repeat;
+  background-clip: padding-box;
+  opacity: 1;
+  width: 100%;
+  height: 100px;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  padding-left: 150px;
+  padding-right: 150px;
+
+  
+}
+
+.banner__title {
+    font-family: 'Monster Clubhouse', sans-serif;
+    font-size: 67px;
+    font-weight: 500;
+    color: #D84A4A;
+    position: absolute;
+    z-index: 2;
+    text-align: left;
+}

@@ -1,0 +1,40 @@
+.detail {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  top: 0;
+  right: 0;
+  background-color: #fff;
+  border: 1px solid #000;
+  width: 360px;
+  height: calc(100vh - 68px);
+  top: 68px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.hidden {
+  display: none;
+}
+.recipe-detail__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+
+.recipe-detail__header__icon {
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+
+}
+
+.recipe-detail__figure {
+  width: 80%;
+
+}
+
+.recipe-detail__figure__img {
+  width: 100%;
+
+}
