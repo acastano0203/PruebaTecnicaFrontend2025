@@ -35,6 +35,7 @@
   background-color: white;
   display: flex;
   align-items: flex-end;
+  margin-bottom: 100px;
 
 
 
@@ -73,6 +74,7 @@
   &__container_title {
     
     display: flex;
+    flex-direction: column;
     width: 100%;
     justify-content: center;
     align-items: center;
@@ -88,7 +90,7 @@
     font-style: normal;
     line-height: 36px;
     font-variant: normal;
-    font-size: 100%;
+    font-size: 30px;
    
   }
   &__second_title {
@@ -99,7 +101,7 @@
     font-style: normal;
     line-height: 36px;
     font-variant: normal;
-    font-size: 100%;
+    font-size: 30px;
    
   }
 
@@ -149,20 +151,25 @@
 
   &__hover {
     position: absolute;
-    bottom: -100%;
+    top: 90px;
     left: 0;
-    width: 100%;
-    height: 70%;
-    background-color: rgba(255, 255, 255, 0.95);
-    padding: 20px;
-    transition: bottom 0.3s ease-in-out;
-    display: flex;
+    width: 266px;
+    height: 250px;
+    background-color: #E9F1FAFF;
+    opacity: 0;
+    transform: translateY(-50%);
     flex-direction: column;
     justify-content: space-around;
+    transition: all 0.3s ease;
+    display: flex;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+    padding-bottom: 10px;
   }
 
   &:hover &__hover {
-    bottom: 0;
+    opacity: 1;
+    transform: translateY(0);
   }
 
   &__item {
@@ -170,7 +177,8 @@
     flex-direction: column;
     align-items: center;
     text-align: center;
-    gap: 8px;
+   
+    
   }
 
   &__icono {
@@ -178,11 +186,20 @@
   }
 
   &__label {
-    font-size: 0.9rem;
-    color: #666;
+    font-family: "Monster Clubhouse", cursive;
+    font-style: normal;
+    font-variant: normal;
+    font-size: 20px;
+    color: #D84A4A;
   }
 
   &__valor {
-    font-weight: bold;
+    
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    font-variant: normal;
+    font-size: 16px;
+    color: #425966;
   }
+  
 }
