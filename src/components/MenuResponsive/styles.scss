@@ -1,21 +1,31 @@
 @use "../Layout/styles.scss" as layout;
 
-@include layout.respond-to(small) {
-  .menu-container {
-    width: 90%;
+.menu-container {
+  @include layout.respond-to(small) {
+    width: 100%;
+    margin-top: -20px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: auto;
-    gap: 10%;
-    margin-top: -7%;
-    margin-right: 3%;
+    grid-template-rows: repeat(2, 1fr);
+    position: relative;
+    row-gap: 10px;
+    padding-left: 3%;
   }
-}
 
-@include layout.respond-to(medium) {
-  .menu-container {
-    width: 90%;
+  @include layout.respond-to(medium) {
+    width: 100%;
+    margin-top: -110px;
     display: flex;
-    margin-top: -6%;
+    position: relative;
+    left: 0;
+    right: 0;
+    top: 0;
+    column-gap: 10px;
+    padding-left: 22%;
+    padding-right: 10%;
+  }
+
+  @include layout.respond-to(large) {
+    display: none;
   }
 }

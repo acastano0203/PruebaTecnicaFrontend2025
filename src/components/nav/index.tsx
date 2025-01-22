@@ -10,11 +10,14 @@ const Nav: FC = () => {
       {/* menu responsive */}
       <div className="nav-container">
         <div className="logo">
-          <span className="nav__recipe__span">Recipe</span>
-          <span className="nav__app__span">App</span>
-        </div>
-        <div className="home">
-          <img src={Home} alt="home" />
+          <div className="logo">
+            <span className="nav__recipe__span">Recipe</span>
+            <span className="nav__app__span">App</span>
+          </div>
+          <div className="home"></div>
+          <div className="home">
+            <img src={Home} alt="home" />
+          </div>
         </div>
       </div>
 

@@ -14,6 +14,7 @@
   color: #d84a4a;
 }
 
+<<<<<<< HEAD
 @include layout.respond-to(small) {
   .nav-container {
     position: absolute;
@@ -69,18 +70,42 @@
     box-shadow: 0px 3px 6px #8395a7;
     grid-template-rows: 1fr;
   }
+=======
+.nav-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 69px;
+  background-color: #ffffff;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  box-shadow: 0px 3px 6px #8395a7;
+  grid-template-rows: 1fr;
+}
+
+@include layout.respond-to(small) {
+>>>>>>> aa802bc (Se hace commit de ultimo ajustes)
   .logo {
     display: flex;
     align-items: center;
     width: 100%;
+<<<<<<< HEAD
     padding-left: 10%;
+=======
+    padding-left: 65px;
+>>>>>>> aa802bc (Se hace commit de ultimo ajustes)
   }
   .home {
     display: flex;
     align-items: center;
     width: 100%;
+<<<<<<< HEAD
     justify-content: end;
     padding-right: 5%;
+=======
+    justify-content: center;
+>>>>>>> aa802bc (Se hace commit de ultimo ajustes)
   }
 
   .nav {
@@ -99,6 +124,7 @@
     display: none;
   }
 }
+<<<<<<< HEAD
 @include layout.respond-to(large) {
   .navlarge_izquierda {
     width: 100%;
@@ -107,6 +133,49 @@
     position: absolute;
     display: grid;
     grid-template-columns: 20fr 80fr;
+=======
+@include layout.respond-to(medium) {
+  .logo {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    padding-left: 65px;
+  }
+  .home {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+  }
+
+  .nav {
+    display: none;
+  }
+  .navlarge {
+    display: none;
+  }
+  .nav__home__span {
+    display: none;
+  }
+  .navlarge__nav ul li {
+    display: none;
+  }
+  .texto {
+    display: none;
+  }
+}
+@include layout.respond-to(large) {
+  .navlarge {
+    width: 100%;
+    height: 69px;
+    top: 0;
+    left: 0;
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+>>>>>>> aa802bc (Se hace commit de ultimo ajustes)
     background-color: white;
     box-shadow: 0px 3px 6px #8395a7;
     align-items: center;
@@ -117,6 +186,7 @@
     }
   }
 
+<<<<<<< HEAD
   .navlarge__nav_derecha {
     display: flex;
     justify-content: start;
@@ -139,12 +209,31 @@
   .nav__home__span {
     font-family: "Poppins", sans-serif;
     font-size: 70%;
+=======
+  .navlarge__nav ul li {
+    display: flex;
+    margin-right: 2rem;
+    align-items: center;
+  }
+  .logo {
+    padding-top: 20px;
+    width: 100%;
+    margin-left: 10%;
+  }
+  .nav__home__span {
+    font-family: "Poppins", sans-serif;
+    font-size: clamp(13px, 2vw, 13px);
+>>>>>>> aa802bc (Se hace commit de ultimo ajustes)
     font-weight: 500;
     color: #d84a4a;
   }
   .texto {
     font-family: "Poppins", sans-serif;
+<<<<<<< HEAD
     font-size: 70%;
+=======
+    font-size: clamp(13px, 2vw, 13px);
+>>>>>>> aa802bc (Se hace commit de ultimo ajustes)
     font-weight: 500;
     font-style: normal;
     color: #425966;
