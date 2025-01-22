@@ -1,4 +1,4 @@
-import { FC, useState, useEffect } from "react";
+import { FC } from "react";
 import Hero from "../../components/Hero";
 import Layout from "../../components/Layout";
 import Menu from "../../components/MenuResponsive";
@@ -45,6 +45,7 @@ const Home: FC = () => {
         ))}
       </div>
       <Footer />
+
       <RecipesDetail />
     </Layout>
   );

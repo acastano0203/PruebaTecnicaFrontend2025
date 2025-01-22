@@ -10,7 +10,7 @@ const MenuCard: FC<MenuCardProps> = ({ icono, titulo }) => {
   return (
     <div className="menuCard">
       <img className="menuCard__icono" src={icono} alt={icono} />
-      <p>{titulo}</p>
+      <span className="menuCard__title">{titulo}</span>
     </div>
   );
 };

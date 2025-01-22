@@ -1,6 +1,6 @@
 import { FC } from "react";
 import "./styles.scss";
-import { useContext, useState, useEffect } from "react";
+import { useContext } from "react";
 import { Context } from "../../context";
 import star from "../../assets/star.png";
 import heart from "../../assets/heart.png";

@@ -1,35 +1,31 @@
 @use "../Layout/styles.scss" as layout;
 
 .menu-container {
-    @include layout.respond-to(small) {
-      width: 100%;
-      margin-top: 240px;
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      grid-template-rows: repeat(2, auto);
-      z-index: 20;
-      position: absolute;
-      top:0;
-      justify-content: center;
-    
+  @include layout.respond-to(small) {
+    width: 100vw;
+    margin-top: 260px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, auto);
+    position: absolute;
+    top: 0;
+    background-color: papayawhip;
+    justify-content: center;
+  }
 
-}
+  @include layout.respond-to(medium) {
+    width: 100vw;
+    margin-top: 265px;
+    display: flex;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    padding: 10px 36px 10px 36px;
+    column-gap: 10px;
+  }
 
-@include layout.respond-to(medium) {
-  width: 100%;
-  margin-top: 240px;
-  display: grid;
-  grid-template-columns: repeat(6, 1fr);
-  grid-template-rows: repeat(1, auto);
-  z-index: 20;
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 0;
-}
-
-@include layout.respond-to(large) {
-  display: none;
-}
-
+  @include layout.respond-to(large) {
+    display: none;
+  }
 }

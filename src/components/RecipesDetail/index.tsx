@@ -6,8 +6,6 @@ import { XMarkIcon } from "@heroicons/react/24/solid";
 const RecipesDetail: FC = () => {
   const context = useContext(Context);
 
-  console.log("context.isRecipesOpen", context.isRecipesOpen);
-
   return (
     <aside className={`${context.isRecipesOpen ? "detail" : "hidden"}`}>
       <div className="recipe-detail__header">
@@ -21,7 +19,7 @@ const RecipesDetail: FC = () => {
           />
         </div>
       </div>
-      <figure className="recipe-detail__figure">
+      <figure>
         <img
           className="recipe-detail__figure__img"
           src={context.detailRecipe?.[0]?.strMealThumb}
@@ -61,7 +59,7 @@ const RecipesDetail: FC = () => {
           </li>
         )}
       </ul>
-      <div className="recipe-detail__instructions">
+      <div>
         <h3>Instrucciones</h3>
         <p>{context.detailRecipe?.[0]?.strInstructions}</p>
       </div>

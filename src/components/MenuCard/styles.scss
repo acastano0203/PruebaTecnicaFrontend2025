@@ -1,48 +1,79 @@
 @use "../Layout/styles.scss" as layout;
-.menuCard {
 
-    background: transparent linear-gradient(180deg, #E9F1FA 0%, #FFFFFF 100%) 0% 0% no-repeat padding-box;
-    width: 80%;
-    box-shadow: 0px 5px 9px #8395A766;
+@include layout.respond-to(small) {
+  .menuCard {
+    background: transparent linear-gradient(180deg, #e9f1fa 0%, #ffffff 100%) 0%
+      0% no-repeat padding-box;
+    width: 114px;
+    height: 92px;
+    box-shadow: 0px 5px 9px #8395a766;
     opacity: 1;
     border-radius: 10px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    margin-left: 20px;
-    margin-right: 20px;
-    margin-top: 20px;
+  }
+  .menuCard__icono {
+    width: 42px;
+    height: 42px;
+    margin-bottom: 5px;
+    margin-top: auto;
+  }
+  .menuCard__title {
+    margin-top: 0;
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 20px;
+    opacity: 100%;
+    text-align: center;
+    color: #425966;
+  }
+}
 
-    .menuCard__icono {
-      width: 40%;
-      height: 80px;
-      margin-bottom: 5px;
-      margin-top:auto;
-   
-    }
-  
-    p {
-      margin-top: 0;
-      margin-bottom:auto;
-      font-family: "Poppins";
-      font-size: 13px;
-      font-weight: 500;
-      font-style: normal;
-      opacity: 100%;
-      text-align: center;
-     color: #425966;
-    
-    }
-  
-    @include layout.respond-to(large) {
-        display: none;
-        }
-   
+@include layout.respond-to(medium) {
+  .menuCard {
+    background: transparent linear-gradient(180deg, #e9f1fa 0%, #ffffff 100%) 0%
+      0% no-repeat padding-box;
+    width: 106px;
+    height: 85px;
+    box-shadow: 0px 5px 9px #8395a766;
+    opacity: 1;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5px 0px 10px 0px;
+  }
+  .menuCard__icono {
+    width: 42px;
+    height: 42px;
+    margin-bottom: 5px;
+    margin-top: auto;
+  }
+  .menuCard__title {
+    margin-top: 0;
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 20px;
+    opacity: 100%;
+    text-align: center;
+    color: #425966;
+  }
+}
+
+@include layout.respond-to(large) {
+  .menuCard {
+    display: none;
+  }
+  .menuCard__icono {
+    display: none;
   }
 
-  
-
-  
-
-  
+  .menuCard__title {
+    display: none;
+  }
+}
