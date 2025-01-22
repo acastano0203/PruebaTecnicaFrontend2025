@@ -38,10 +38,10 @@ const Home: FC = () => {
     <Layout>
       <Hero />
       <Menu />
-      <div className="card-container">
-        <Banner />
-        {data?.meals?.map((recipe: Recipe, index) => (
-          <Card key={index} recipe={recipe} />
+      <Banner />
+      <div className="container">
+        {data?.meals.map((recipe) => (
+          <Card recipe={recipe} />
         ))}
       </div>
       <Footer />

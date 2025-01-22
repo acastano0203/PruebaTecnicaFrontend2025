@@ -114,7 +114,6 @@
     height: 30vh;
     position: relative;
     overflow: hidden;
-    bottom: 0;
   }
   .footer {
     display: grid;
@@ -126,7 +125,7 @@
     bottom: 0;
     left: 0;
     z-index: 100;
-    margin-top: 0px;
+    margin-top: -10px;
     bottom: 10px;
 
     &__left {

@@ -8,24 +8,16 @@ const RecipesDetail: FC = () => {
 
   return (
     <aside className={`${context.isRecipesOpen ? "detail" : "hidden"}`}>
-      <div className="recipe-detail__header">
+      <div
+        className="recipe-detail__header"
+        onClick={() => {
+          context?.closeRecipesDetail?.();
+        }}
+      >
         <h1>recipes Detail</h1>
-        <div>
-          <XMarkIcon
-            className="recipe-detail__header__icon"
-            onClick={() => {
-              context?.closeRecipesDetail?.();
-            }}
-          />
-        </div>
+        <XMarkIcon className="recipe-detail__header__icon" />
       </div>
-      <figure>
-        <img
-          className="recipe-detail__figure__img"
-          src={context.detailRecipe?.[0]?.strMealThumb}
-          alt={context.detailRecipe?.[0]?.strMeal}
-        />
-      </figure>
+
       <h2>{context.detailRecipe?.[0]?.strMeal}</h2>
       <ul className="recipe-detail__ingredients">
         {context.detailRecipe?.[0]?.strIngredient1 && (

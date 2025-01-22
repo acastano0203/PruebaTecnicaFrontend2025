@@ -3,83 +3,13 @@
 @include layout.respond-to(small) {
   .hero {
     background-image: url("../../assets/banner.png");
-    width: 100vw;
+    width: 100%;
     height: 234px;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 40% 60%;
-    margin-top: 60px;
-  }
-
-  .hero__recipes {
-    font-family: "Poppins", sans-serif;
-    font-size: 51px;
-    font-weight: 400;
-    color: white;
-    position: absolute;
-    z-index: 2;
-    left: 57px;
-    width: 100%;
-    top: 98px;
-  }
-  .hero__people {
-    font-family: "Monster Clubhouse", cursive;
-    font-size: 51px;
-    font-weight: 400;
-    color: white;
-    position: absolute;
-    z-index: 2;
-    left: 57px;
-    width: 100%;
-    top: 140px;
-  }
-}
-
-@include layout.respond-to(medium) {
-  .hero {
-    background-image: url("../../assets/banner.png");
-    width: 100vw;
-    height: 234px;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: 50% 20%;
-    margin-top: 60px;
-  }
-  .hero__recipes {
-    font-family: "Poppins", sans-serif;
-    font-size: 74px;
-    font-weight: 400;
-    color: white;
-    position: absolute;
-    z-index: 2;
-    left: 122px;
-    width: 100%;
-    top: 55px;
-  }
-  .hero__people {
-    font-family: "Monster Clubhouse", cursive;
-    font-size: 67px;
-    font-weight: 400;
-    color: white;
-    position: absolute;
-    z-index: 2;
-    left: 121px;
-    width: 100%;
-    top: 122px;
-  }
-}
-
-@include layout.respond-to(large) {
-  .hero {
-    background-image: url("../../assets/banner.png");
-    width: 100%;
-    height: 100vh;
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: 50% 20%;
-    margin: 0;
-    padding: 0;
-    position: absolute;
+    margin-top: 50px;
+    position: relative;
     top: 0;
     left: 0;
     right: 0;
@@ -87,14 +17,48 @@
   }
   .hero__recipes {
     font-family: "Poppins", sans-serif;
+    font-size: 51px;
+    font-weight: 400;
+    color: white;
+    position: relative;
+    z-index: 2;
+    left: 15%;
+    width: 100%;
+    top: 25px;
+  }
+  .hero__people {
+    font-family: "Monster Clubhouse", cursive;
+    font-size: 51px;
+    font-weight: 400;
+    color: white;
+    position: relative;
+    z-index: 2;
+    left: 15%;
+    width: 100%;
+    top: -45px;
+  }
+}
+
+@include layout.respond-to(medium) {
+  .hero {
+    background-image: url("../../assets/banner.png");
+    width: 100%;
+    height: 416px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    margin-top: -25px;
+  }
+  .hero__recipes {
+    font-family: "Poppins", sans-serif;
     font-size: 74px;
     font-weight: 400;
     color: white;
     position: absolute;
     z-index: 2;
-    left: 261px;
+    left: 16%;
     width: 100%;
-    top: 130px;
+    top: 70px;
   }
   .hero__people {
     font-family: "Monster Clubhouse", cursive;
@@ -103,23 +67,43 @@
     color: white;
     position: absolute;
     z-index: 2;
-    left: 261px;
+    left: 16%;
     width: 100%;
-    top: 226px;
+    top: 130px;
   }
 }
 
-@media (min-width: 1280px) {
+@include layout.respond-to(large) {
   .hero {
+    margin: 6px auto 0;
+    background-image: url("../../assets/banner.png");
+    width: 100%;
+    height: 100vh;
+    background-repeat: no-repeat;
     background-size: contain;
-    background-position: 50% 20%;
+    background-position: 76% 14%;
+    position: relative;
   }
   .hero__recipes {
-    left: 380px;
-    top: 220px;
+    font-family: "Poppins", sans-serif;
+    font-size: 74px;
+    font-weight: 400;
+    color: white;
+    position: absolute;
+    z-index: 2;
+    left: 20%;
+    width: 100%;
+    top: 150px;
   }
   .hero__people {
-    left: 380px;
-    top: 285px;
+    font-family: "Monster Clubhouse", cursive;
+    font-size: 67px;
+    font-weight: 400;
+    color: white;
+    position: absolute;
+    z-index: 2;
+    left: 20%;
+    width: 100%;
+    top: 219px;
   }
 }

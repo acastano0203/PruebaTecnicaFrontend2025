@@ -30,7 +30,7 @@ export const Card: FC<CardProps> = ({ recipe }) => {
   };
 
   return (
-    <div className="container">
+    <div className="cards-container">
       <div className="card" onClick={() => showRecipes(recipe)}>
         <div className="card__imagen">
           <img src={recipe.strMealThumb} alt={recipe.strMeal} />

@@ -1,6 +1,5 @@
 @use "../Layout/styles.scss" as layout;
 
-// Estas clases se utilizan en todos los tamaños de pantalla
 .nav__recipe__span {
   font-family: "Monster Clubhouse", sans-serif;
   font-size: 40px;
@@ -15,65 +14,31 @@
   color: #d84a4a;
 }
 
-// mobile
-@include layout.respond-to(small) {
-  .nav-container {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 69px;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr;
-  }
-
-  .ilHome {
-    display: flex;
-    align-items: self-start;
-    justify-content: center;
-    width: 25px;
-    height: 25px;
-    padding-top: 10px;
-    padding-left: 10px;
-  }
-  .ilLogo {
-    padding-left: 40px;
-    display: flex;
-    align-items: self-start;
-    justify-content: center;
-  }
-  .nav {
-    display: none;
-  }
-  .navlarge {
-    display: none;
-  }
-  .nav__home__span {
-    display: none;
-  }
+.nav-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 69px;
+  background-color: #ffffff;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  box-shadow: 0px 3px 6px #8395a7;
+  grid-template-rows: 1fr;
 }
-// tablet
-@include layout.respond-to(medium) {
-  .nav-container {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 69px;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr;
-  }
 
-  .ilHome {
-    padding-left: 220px;
+@include layout.respond-to(small) {
+  .logo {
     display: flex;
     align-items: center;
+    width: 100%;
+    padding-left: 65px;
   }
-  .ilLogo {
-    padding-left: 63px;
-    margin-top: 10px;
+  .home {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
   }
 
   .nav {
@@ -82,66 +47,99 @@
   .navlarge {
     display: none;
   }
-
-  .navlarge {
-    display: none;
-  }
-
   .nav__home__span {
     display: none;
   }
+  .navlarge__nav ul li {
+    display: none;
+  }
+  .texto {
+    display: none;
+  }
 }
+@include layout.respond-to(medium) {
+  .logo {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    padding-left: 65px;
+  }
+  .home {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+  }
 
-// menu destokp
+  .nav {
+    display: none;
+  }
+  .navlarge {
+    display: none;
+  }
+  .nav__home__span {
+    display: none;
+  }
+  .navlarge__nav ul li {
+    display: none;
+  }
+  .texto {
+    display: none;
+  }
+}
 @include layout.respond-to(large) {
   .navlarge {
+    width: 100%;
+    height: 69px;
+    top: 0;
+    left: 0;
+    position: absolute;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #ffffff;
-    background-repeat: no-repeat;
-    background-clip: padding-box;
-    width: 100%;
-    height: 69px;
-    position: fixed;
-    top: 0;
-    left: 0;
+    background-color: white;
     box-shadow: 0px 3px 6px #8395a7;
     cursor: pointer;
     ul {
       list-style: none;
       display: flex;
-      padding-right: 70px;
     }
   }
+
   .navlarge__nav ul li {
     display: flex;
+    margin-right: 2rem;
+    align-items: center;
+  }
+  .logo {
+    padding-top: 20px;
+    width: 100%;
+    margin-left: 10%;
   }
   .nav__home__span {
     font-family: "Poppins", sans-serif;
-    font-size: 13px;
+    font-size: clamp(13px, 2vw, 13px);
     font-weight: 500;
     color: #d84a4a;
   }
-  .ilLogo {
-    padding-left: 70px;
-    margin-top: 10px;
-  }
   .texto {
     font-family: "Poppins", sans-serif;
-    text-align: left;
-    font-size: 13px;
+    font-size: clamp(13px, 2vw, 13px);
     font-weight: 500;
     font-style: normal;
     color: #425966;
     opacity: 1;
-    margin: 19px;
+    display: inline-block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
   }
 
   .nav-container {
     display: none;
   }
-  .ilHome {
+  .home {
     display: none;
   }
 }

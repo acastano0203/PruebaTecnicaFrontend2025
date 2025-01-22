@@ -4,15 +4,18 @@
   .detail {
     display: flex;
     flex-direction: column;
-    top: 0;
-    right: 0;
-    padding: 20px;
-    border: 1px solid #000;
-    width: 300px;
-    height: calc(100vh - 68px);
-    margin-top: 20px;
-    background-color: #e9f1fa;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-70%, -30%);
+    padding: 0px 20px 20px 20px;
+    width: 50%;
     opacity: 1;
+    background-color: #6aa3c1;
+    border-radius: 20px;
+    z-index: 1000;
+    height: 90vh;
+    max-height: 90vh;
     overflow-y: auto;
   }
 
@@ -23,7 +26,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px;
+    //padding: 10px;
   }
 
   .recipe-detail__header__icon {
@@ -92,15 +95,18 @@
   .detail {
     display: flex;
     flex-direction: column;
-    top: 0;
-    right: 0;
-    padding: 20px;
-    border: 1px solid #000;
-    width: 300px;
-    height: calc(100vh - 68px);
-    margin-top: 20px;
-    background-color: #e9f1fa;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-70%, -30%);
+    padding: 0px 20px 20px 20px;
+    width: 50%;
     opacity: 1;
+    background-color: #6aa3c1;
+    border-radius: 20px;
+    z-index: 1000;
+    height: 90vh;
+    max-height: 90vh;
     overflow-y: auto;
   }
 
@@ -111,7 +117,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px;
+    //padding: 10px;
   }
 
   .recipe-detail__header__icon {
@@ -182,15 +188,22 @@
     display: flex;
     flex-direction: column;
     position: fixed;
-    top: 0;
-    right: 0;
-    padding: 20px;
-    border: 1px solid #000;
-    width: 300px;
+    top: 50%;
+    left: 50%;
+    transform: translate(0, -50%);
+    right: 20px;
+    left: auto;
+    padding: 0px 20px 20px 20px;
+    width: 50%;
+    min-width: 300px;
+    max-width: 300px;
     height: calc(100vh - 68px);
-    margin-top: 20px;
-    background-color: #e9f1fa;
     opacity: 1;
+    background-color: #6aa3c1;
+    border-radius: 20px;
+    z-index: 1000;
+    height: 90vh;
+    max-height: 90vh;
     overflow-y: auto;
   }
 
@@ -201,7 +214,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px;
+    //padding: 10px;
   }
 
   .recipe-detail__header__icon {

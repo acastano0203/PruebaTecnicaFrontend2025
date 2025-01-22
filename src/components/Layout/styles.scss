@@ -11,11 +11,11 @@
 // Definir un mixin para breakpoints
 @mixin respond-to($breakpoint) {
   @if $breakpoint == small {
-    @media (max-width: 428px) {
+    @media (max-width: 391px) {
       @content;
     }
   } @else if $breakpoint == medium {
-    @media (min-width: 429px) and (max-width: 768px) {
+    @media (min-width: 391px) and (max-width: 768px) {
       @content;
     }
   } @else if $breakpoint == large {

@@ -9,45 +9,43 @@ const Nav: FC = () => {
     <div>
       {/* menu responsive */}
       <div className="nav-container">
-        <figure className="ilLogo">
+        <div className="logo">
           <span className="nav__recipe__span">Recipe</span>
           <span className="nav__app__span">App</span>
-        </figure>
-        <figure className="ilHome">
+        </div>
+        <div className="home">
           <img src={Home} alt="home" />
-        </figure>
+        </div>
       </div>
 
       {/* menu desktop */}
       <div className="navlarge">
-        <p className="ilLogo">
+        <p className="logo">
           <span className="nav__recipe__span">Recipe</span>
           <span className="nav__app__span">App</span>
         </p>
         <nav className="navlarge__nav">
           <ul>
             <li>
-              <p className="texto">
-                <span className="nav__home__span">Home</span>
-              </p>
+              <span className="nav__home__span">Home</span>
             </li>
             <li>
-              <p className="texto">Vegetarianos</p>
+              <span className="texto">Vegetarianos</span>
             </li>
             <li>
-              <p className="texto">Platos Principales</p>
+              <span className="texto">Platos Principales</span>
             </li>
             <li>
-              <p className="texto">Tortas</p>
+              <span className="texto">Tortas</span>
             </li>
             <li>
-              <p className="texto">Comidas Rápidas</p>
+              <span className="texto">Comidas Rápidas</span>
             </li>
             <li>
-              <p className="texto">Menú Niños</p>
+              <span className="texto">Menú Niños</span>
             </li>
             <li>
-              <p className="texto">Sopas</p>
+              <span className="texto">Sopas</span>
             </li>
           </ul>
         </nav>
