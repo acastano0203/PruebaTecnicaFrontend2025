@@ -4,7 +4,7 @@ import "./styles.scss";
 
 const Footer: FC = () => {
   return (
-    <div>
+    <div className="footer-container">
       <div className="footer">
         <div className="footer__left">
           <span className="footer__text">Con el patrocinio de</span>

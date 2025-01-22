@@ -3,14 +3,14 @@
 .menu-container {
   @include layout.respond-to(small) {
     width: 100vw;
-    margin-top: 260px;
+    margin-top: 270px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, auto);
     position: absolute;
-    top: 0;
-    background-color: papayawhip;
     justify-content: center;
+    align-items: center;
+    top: 0;
+    row-gap: 10px;
   }
 
   @include layout.respond-to(medium) {

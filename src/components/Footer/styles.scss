@@ -109,23 +109,24 @@
   .footer-container {
     display: flex;
     justify-content: center;
-    align-items: end;
+    align-items: flex-end;
     width: 100vw;
     height: 30vh;
     position: relative;
     overflow: hidden;
+    bottom: 0;
   }
   .footer {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    width: 100%;
+    width: 100vw;
     height: 167px;
     background: linear-gradient(to right, #c2e3f3, #6aa3c1);
-    position: absolute;
+    position: relative;
     bottom: 0;
     left: 0;
     z-index: 100;
-    margin-top: -10px;
+    margin-top: 0px;
     bottom: 10px;
 
     &__left {

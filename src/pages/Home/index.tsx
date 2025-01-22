@@ -45,7 +45,6 @@ const Home: FC = () => {
         ))}
       </div>
       <Footer />
-
       <RecipesDetail />
     </Layout>
   );
