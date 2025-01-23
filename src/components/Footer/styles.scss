@@ -52,18 +52,21 @@
 
 @include layout.respond-to(medium) {
   .footer-container {
+    margin-top: 60px;
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
     height: 15vh;
-    position: relative;
+    position: fixed;
+    left: 0;
+    bottom: 20px;
   }
 
   .footer {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    width: 100%;
+    width: 100vh;
     height: 115px;
     background: linear-gradient(to right, #c2e3f3, #6aa3c1);
     position: relative;
@@ -72,11 +75,11 @@
     z-index: 100;
     bottom: 0px;
     justify-content: center;
+
     &__left {
       display: flex;
       align-items: center;
       justify-content: center;
-      bottom: 10px;
     }
 
     &__right {
@@ -89,16 +92,15 @@
     &__text {
       font-family: "Monster Clubhouse", cursive;
       color: #425966;
-      font-size: 39px;
-      padding-top: 30px;
-      padding-left: 30px;
+      font-size: 250%;
       font-weight: 500;
+      margin-bottom: 60px;
     }
 
     &__image {
       max-width: 550px;
       height: 167px;
-      transform: translateY(-30px);
+      transform: translateY(-50px);
     }
   }
 }
@@ -109,8 +111,10 @@
     justify-content: center;
     align-items: flex-end;
     width: 100%;
-    height: 30vh;
-    position: relative;
+    height: 15vh;
+    position: fixed;
+    bottom: 0;
+    left: 0;
   }
   .footer {
     display: grid;
