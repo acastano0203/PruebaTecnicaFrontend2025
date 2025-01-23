@@ -2,7 +2,7 @@ import { BrowserRouter, useRoutes } from "react-router-dom";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import Home from "../Home";
 import Recipes from "../Recipes";
-import Nav from "../../components/Nav";
+import Nav from "../../components/nav";
 import { ContextProvider } from "../../context";
 
 const queryClient = new QueryClient();
