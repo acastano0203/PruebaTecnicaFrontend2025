@@ -6,9 +6,9 @@ import { Card } from "../../components/Card";
 import { useQuery } from "@tanstack/react-query";
 import apiClient from "../../Api";
 import "./styles.scss";
-import RecipesDetail from "../../components/RecipesDetail";
+// import RecipesDetail from "../../components/RecipesDetail";
 import Banner from "../../components/Banner";
-import Footer from "../../components/Footer";
+// import Footer from "../../components/Footer";
 
 interface Recipe {
   idMeal: number;
@@ -21,7 +21,9 @@ interface Recipe {
 interface RecipeResponse {
   meals: Recipe[];
 }
-
+// Función asíncrona que obtiene las recetas de la API
+// Hace una petición GET a /search.php?f=m para obtener recetas que empiezan con 'm'
+// Retorna la respuesta de la API que contiene un array de recetas
 const getRecipes = async (): Promise<RecipeResponse> => {
   const recipes = await apiClient.get("/search.php?f=m");
   console.log();
@@ -38,14 +40,9 @@ const Home: FC = () => {
     <Layout>
       <Hero />
       <Menu />
-      <Banner />
-      <div className="container">
-        {data?.meals.map((recipe) => (
-          <Card recipe={recipe} />
-        ))}
-      </div>
-      <Footer />
-      <RecipesDetail />
+
+      {/* <Footer /> */}
+      {/* <RecipesDetail /> */}
     </Layout>
   );
 };

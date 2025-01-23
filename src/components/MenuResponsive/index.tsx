@@ -19,7 +19,7 @@ const Menu: FC = () => {
 
   const menuInferior = [
     { icono: IconoRapida, titulo: "Rápida" },
-    { icono: IconoNinos, titulo: "Menú Niños" },
+    { icono: IconoNinos, titulo: "Niños" },
     { icono: IconoSopas, titulo: "Sopas" },
   ];
 
