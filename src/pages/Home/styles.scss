@@ -1,0 +1,39 @@
+@use "../../components/Layout/styles.scss" as layout;
+
+@include layout.respond-to(small) {
+  .container {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5%;
+  }
+}
+
+@include layout.respond-to(medium) {
+  .container {
+    width: 75%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5%;
+    margin-left: 3%;
+    gap: 20px;
+  }
+}
+
+@include layout.respond-to(large) {
+  .container {
+    width: 70%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    align-items: center;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5%;
+    gap: 20px;
+  }
+}

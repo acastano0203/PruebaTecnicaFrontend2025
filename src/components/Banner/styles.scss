@@ -1,0 +1,81 @@
+@use "../Layout/styles.scss" as layout;
+
+@include layout.respond-to(small) {
+  .banner {
+    margin-top: 0;
+    background-repeat: no-repeat;
+    background-clip: padding-box;
+    opacity: 1;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 1;
+    // margin-top: 150%;
+  }
+
+  .banner__title {
+    font-family: "Monster Clubhouse", sans-serif;
+    font-size: 200%;
+    font-weight: 500;
+    color: #d84a4a;
+    position: relative;
+    z-index: 2;
+    text-align: center;
+  }
+}
+
+@include layout.respond-to(medium) {
+  .banner {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    margin-left: 15%;
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+  }
+
+  .banner__title {
+    font-family: "Monster Clubhouse", sans-serif;
+    font-size: 300%;
+    font-weight: 500;
+    color: #d84a4a;
+    position: absolute;
+    z-index: 2;
+    text-align: center;
+  }
+}
+
+@include layout.respond-to(large) {
+  .banner {
+    position: relative;
+    background-color: white;
+    opacity: 1;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    padding-left: 5%;
+    display: flex;
+    margin-top: 2%;
+  }
+
+  .banner__title {
+    font-family: "Monster Clubhouse", sans-serif;
+    font-size: 300%;
+    font-weight: 500;
+    color: #d84a4a;
+    position: relative;
+    z-index: 2;
+    text-align: left;
+  }
+}

@@ -1,0 +1,21 @@
+@use "../Layout/styles.scss" as layout;
+
+@include layout.respond-to(small) {
+  .menu-container {
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    gap: 10%;
+    margin-top: -7%;
+    margin-right: 3%;
+  }
+}
+
+@include layout.respond-to(medium) {
+  .menu-container {
+    width: 90%;
+    display: flex;
+    margin-top: -6%;
+  }
+}
