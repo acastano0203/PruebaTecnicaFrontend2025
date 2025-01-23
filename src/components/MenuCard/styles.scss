@@ -1,64 +1,50 @@
 @use "../Layout/styles.scss" as layout;
 
+.menuCard__icono {
+  width: 40%;
+  height: 40%;
+}
+.menuCard__title {
+  margin-top: 0;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 60%;
+  line-height: 20%;
+  text-align: center;
+  color: #425966;
+}
+
 @include layout.respond-to(small) {
   .menuCard {
-    background: transparent linear-gradient(180deg, #e9f1fa 0%, #ffffff 100%) 0%
-      0% no-repeat padding-box;
-    width: 90%;
-    box-shadow: 0px 5px 9px #8395a766;
-    opacity: 1;
-    border-radius: 10%;
+    background: linear-gradient(180deg, #e9f1fa 0%, #ffffff 100%);
+    width: 80%;
+    height: 80px;
     display: flex;
+    border-radius: 10%;
+    box-shadow: 0px 5px 9px #8395a766;
     flex-direction: column;
+    row-gap: 10%;
     align-items: center;
     justify-content: center;
-    padding: 10% 0% 10% 0%;
-  }
-  .menuCard__icono {
-    width: 33px;
-    height: 35px;
-  }
-  .menuCard__title {
-    margin-top: 0;
-    font-family: "Poppins", sans-serif;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 70%;
-    line-height: 20px;
-    opacity: 100%;
-    text-align: center;
-    color: #425966;
+    padding: 0% 10% 0% 10%;
   }
 }
 
 @include layout.respond-to(medium) {
   .menuCard {
-    background: transparent linear-gradient(180deg, #e9f1fa 0%, #ffffff 100%) 0%
-      0% no-repeat padding-box;
-    width: 100px;
-    //height: 85px;
+    background: linear-gradient(180deg, #e9f1fa 0%, #ffffff 100%);
+    width: 80%;
+    height: 80px;
+    display: flex;
+    border-radius: 10%;
     box-shadow: 0px 5px 9px #8395a766;
     flex-direction: column;
     row-gap: 10%;
     align-items: center;
-    padding: 2% 0% 2% 0%;
-  }
-  .menuCard__icono {
-    width: 42px;
-    height: 42px;
-    margin-bottom: 5px;
-    margin-top: auto;
-  }
-  .menuCard__title {
-    margin-top: 0;
-    font-family: "Poppins", sans-serif;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 13px;
-    line-height: 20px;
-    opacity: 100%;
-    text-align: center;
-    color: #425966;
+    justify-content: center;
+    margin-left: 2%;
+    padding: 0% 2% 0% 2%;
   }
 }
 

@@ -1,50 +1,50 @@
-@use "../Layout/styles.scss" as layout;
+@use "../../components/Layout/styles.scss" as layout;
 
 .nav__recipe__span {
   font-family: "Monster Clubhouse", sans-serif;
-  font-size: 40px;
+  font-size: 250%;
   font-weight: 400;
   color: #425966;
   text-align: left;
 }
 .nav__app__span {
   font-family: "Poppins", sans-serif;
-  font-size: 30px;
+  font-size: 200%;
   font-weight: 400;
   color: #d84a4a;
 }
 
-.nav-container {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 69px;
-  background-color: #ffffff;
-  display: grid;
-  grid-template-columns: 2fr 1fr;
-  box-shadow: 0px 3px 6px #8395a7;
-  grid-template-rows: 1fr;
-}
-
 @include layout.respond-to(small) {
+  .nav-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 69px;
+    background-color: #ffffff;
+    display: flex;
+    box-shadow: 0px 3px 6px #8395a7;
+    grid-template-rows: 1fr;
+    justify-content: space-between;
+  }
   .logo {
     display: flex;
     align-items: center;
     width: 100%;
-    padding-left: 65px;
+    padding-left: 10%;
   }
   .home {
     display: flex;
     align-items: center;
     width: 100%;
-    justify-content: center;
+    justify-content: end;
+    padding-right: 5%;
   }
 
   .nav {
     display: none;
   }
-  .navlarge {
+  .navlarge_izquierda {
     display: none;
   }
   .nav__home__span {
@@ -58,24 +58,35 @@
   }
 }
 @include layout.respond-to(medium) {
-  .logo {
+  .nav-container {
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
+    height: 69px;
+    background-color: #ffffff;
+    display: flex;
+    box-shadow: 0px 3px 6px #8395a7;
+    grid-template-rows: 1fr;
+  }
+  .logo {
     display: flex;
     align-items: center;
-    justify-content: start;
-    padding-left: 65px;
+    width: 100%;
+    padding-left: 10%;
   }
   .home {
-    width: 100%;
     display: flex;
     align-items: center;
+    width: 100%;
     justify-content: end;
+    padding-right: 5%;
   }
 
   .nav {
     display: none;
   }
-  .navlarge {
+  .navlarge_izquierda {
     display: none;
   }
   .nav__home__span {
@@ -89,17 +100,16 @@
   }
 }
 @include layout.respond-to(large) {
-  .navlarge {
+  .navlarge_izquierda {
     width: 100%;
-    height: 69px;
     top: 0;
     left: 0;
     position: absolute;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    display: grid;
+    grid-template-columns: 20fr 80fr;
     background-color: white;
     box-shadow: 0px 3px 6px #8395a7;
+    align-items: center;
     cursor: pointer;
     ul {
       list-style: none;
@@ -107,25 +117,34 @@
     }
   }
 
+  .navlarge__nav_derecha {
+    display: flex;
+    justify-content: start;
+    padding-right: 5%;
+  }
+
   .navlarge__nav ul li {
     display: flex;
-    margin-right: 2rem;
-    align-items: center;
+    padding-right: 5%;
   }
   .logo {
-    padding-top: 20px;
+    display: flex;
+    justify-content: start;
+    padding-left: 5%;
+    align-items: center;
     width: 100%;
-    margin-left: 10%;
+    padding-top: 0.5%;
+    padding-bottom: 0.5%;
   }
   .nav__home__span {
     font-family: "Poppins", sans-serif;
-    font-size: clamp(13px, 2vw, 13px);
+    font-size: 70%;
     font-weight: 500;
     color: #d84a4a;
   }
   .texto {
     font-family: "Poppins", sans-serif;
-    font-size: clamp(13px, 2vw, 13px);
+    font-size: 70%;
     font-weight: 500;
     font-style: normal;
     color: #425966;

@@ -16,9 +16,7 @@
     font-weight: 400;
     color: white;
     position: relative;
-    position: relative;
     z-index: 2;
-    left: 15%;
     left: 15%;
     width: 100%;
     top: 150px;
@@ -29,9 +27,7 @@
     font-weight: 400;
     color: white;
     position: relative;
-    position: relative;
     z-index: 2;
-    left: 15%;
     left: 15%;
     width: 100%;
     top: 85px;
@@ -56,9 +52,7 @@
     position: absolute;
     z-index: 2;
     left: 16%;
-    left: 16%;
     width: 100%;
-    top: 70px;
     top: 70px;
   }
   .hero__people {
@@ -69,40 +63,40 @@
     position: absolute;
     z-index: 2;
     left: 16%;
-    left: 16%;
     width: 100%;
-    top: 130px;
     top: 130px;
   }
 }
 
-.hero {
-  background-image: url("../../assets/banner.png");
-  width: 100%;
-  height: 900px;
-  background-size: 120% auto; // Cambiado de 'cover' a '120% auto'
-  background-position: center top;
-  background-repeat: no-repeat;
-}
-.hero__recipes {
-  font-family: "Poppins", sans-serif;
-  font-size: 400%;
-  font-weight: 400;
-  color: white;
-  position: absolute;
-  z-index: 2;
-  left: 16%;
-  width: 100%;
-  top: 150px;
-}
-.hero__people {
-  font-family: "Monster Clubhouse", cursive;
-  font-size: 400%;
-  font-weight: 400;
-  color: white;
-  position: absolute;
-  z-index: 2;
-  left: 16%;
-  width: 100%;
-  top: 200px;
+@include layout.respond-to(large) {
+  .hero {
+    background-image: url("../../assets/banner.png");
+    width: 100%;
+    height: 600px;
+    background-size: 120% auto; // Cambiado de 'cover' a '120% auto'
+    background-position: center top;
+    background-repeat: no-repeat;
+  }
+  .hero__recipes {
+    font-family: "Poppins", sans-serif;
+    font-size: 400%;
+    font-weight: 400;
+    color: white;
+    position: relative;
+    z-index: 2;
+    left: 16%;
+    width: 100%;
+    top: 120px;
+  }
+  .hero__people {
+    font-family: "Monster Clubhouse", cursive;
+    font-size: 400%;
+    font-weight: 400;
+    color: white;
+    position: relative;
+    z-index: 2;
+    left: 16%;
+    width: 100%;
+    top: 40px;
+  }
 }
