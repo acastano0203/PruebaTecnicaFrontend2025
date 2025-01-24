@@ -6,8 +6,8 @@
     width: 100%;
     height: 400px;
     margin-top: -65px;
-    background-size: cover;
-    background-position: 40% 60%;
+    background-size: cover; //170% auto
+    background-position: 55% 70%;
     background-repeat: no-repeat;
   }
   .hero__recipes {
@@ -17,7 +17,7 @@
     color: white;
     position: relative;
     z-index: 2;
-    left: 15%;
+    left: 8%;
     width: 100%;
     top: 150px;
   }
@@ -28,7 +28,7 @@
     color: white;
     position: relative;
     z-index: 2;
-    left: 15%;
+    left: 8%;
     width: 100%;
     top: 85px;
   }
@@ -40,31 +40,31 @@
     width: 100%;
     height: 400px;
     margin-top: -45px;
-    background-size: cover;
-    background-position: 40% 60%;
+    background-size: cover; // 110% auto
+    background-position: 10% 90%;
     background-repeat: no-repeat;
   }
   .hero__recipes {
     font-family: "Poppins", sans-serif;
-    font-size: 300%;
+    font-size: 74px;
     font-weight: 400;
     color: white;
     position: absolute;
     z-index: 2;
-    left: 16%;
+    left: 17%;
     width: 100%;
-    top: 70px;
+    top: 75px;
   }
   .hero__people {
     font-family: "Monster Clubhouse", cursive;
-    font-size: 300%;
+    font-size: 67px;
     font-weight: 400;
     color: white;
     position: absolute;
     z-index: 2;
-    left: 16%;
+    left: 17%;
     width: 100%;
-    top: 130px;
+    top: 140px;
   }
 }
 
@@ -73,30 +73,30 @@
     background-image: url("../../assets/banner.png");
     width: 100%;
     height: 600px;
-    background-size: 120% auto; // Cambiado de 'cover' a '120% auto'
-    background-position: center top;
+    background-size: cover; //130% auto; // Cambiado de 'cover' a '120% auto'
+    background-position: 1% 99%;
     background-repeat: no-repeat;
   }
   .hero__recipes {
     font-family: "Poppins", sans-serif;
-    font-size: 400%;
+    font-size: 74px;
     font-weight: 400;
     color: white;
     position: relative;
     z-index: 2;
-    left: 16%;
+    left: 300px;
     width: 100%;
-    top: 120px;
+    top: 180px;
   }
   .hero__people {
     font-family: "Monster Clubhouse", cursive;
-    font-size: 400%;
+    font-size: 67px;
     font-weight: 400;
     color: white;
     position: relative;
     z-index: 2;
-    left: 16%;
+    left: 300px;
     width: 100%;
-    top: 40px;
+    top: 85px;
   }
 }
